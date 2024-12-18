@@ -102,6 +102,7 @@ export const verifyEmail = async (req, res) => {
 		// save user to database
 		await user.save();
 
+		// send welcome email to user email
 		await sendWelcomeEmail(user.email, user.name);
 
 		res.status(200).json({
