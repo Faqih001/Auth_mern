@@ -72,6 +72,7 @@ export const signup = async (req, res) => {
 	}
 };
 
+// Verify email controller function
 export const verifyEmail = async (req, res) => {
 	const { code } = req.body;
 	try {
