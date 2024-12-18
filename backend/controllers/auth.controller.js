@@ -67,6 +67,7 @@ export const signup = async (req, res) => {
 			},
 		});
 	} catch (error) {
+		// catch error and return error message
 		res.status(400).json({ success: false, message: error.message });
 	}
 };
