@@ -12,6 +12,7 @@ import { User } from "../models/user.model.js";
 
 // Sign up user controller function 
 export const signup = async (req, res) => {
+	// initializing email, password, name from req.body
 	const { email, password, name } = req.body;
 
 	try {
