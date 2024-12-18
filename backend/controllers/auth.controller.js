@@ -39,6 +39,7 @@ export const signup = async (req, res) => {
 		// generate verification token 
 		const verificationToken = Math.floor(100000 + Math.random() * 900000).toString();
 
+		// create new user with email, password, name, verificationToken, verificationTokenExpiresAt
 		const user = new User({
 			email,
 			password: hashedPassword,
