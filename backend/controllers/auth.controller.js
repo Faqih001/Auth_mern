@@ -57,6 +57,7 @@ export const signup = async (req, res) => {
 		// send verification email to user email
 		await sendVerificationEmail(user.email, verificationToken);
 
+		// return success message and user data
 		res.status(201).json({
 			success: true,
 			message: "User created successfully",
