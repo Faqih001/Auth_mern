@@ -15,7 +15,7 @@ export const signup = async (req, res) => {
 	// initializing email, password, name from req.body
 	const { email, password, name } = req.body;
 
-	// 
+	// try catch error handling for empty fields 
 	try {
 		if (!email || !password || !name) {
 			throw new Error("All fields are required");
