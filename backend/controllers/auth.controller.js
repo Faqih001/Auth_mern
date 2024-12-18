@@ -92,6 +92,8 @@ export const verifyEmail = async (req, res) => {
 
 		// update user isVerified, verificationToken, verificationTokenExpiresAt
 		user.isVerified = true;
+
+		// set verificationToken and verificationTokenExpiresAt to undefined
 		user.verificationToken = undefined;
 		user.verificationTokenExpiresAt = undefined;
 		await user.save();
