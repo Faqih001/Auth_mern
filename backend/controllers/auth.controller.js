@@ -98,6 +98,8 @@ export const verifyEmail = async (req, res) => {
 
 		// set verificationTokenExpiresAt to undefined
 		user.verificationTokenExpiresAt = undefined;
+
+		// save user to database
 		await user.save();
 
 		await sendWelcomeEmail(user.email, user.name);
