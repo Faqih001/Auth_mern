@@ -28,6 +28,7 @@ export const signup = async (req, res) => {
 		// Log userAlreadyExists
 		console.log("userAlreadyExists", userAlreadyExists);
 
+		// if user already exists, return error message
 		if (userAlreadyExists) {
 			return res.status(400).json({ success: false, message: "User already exists" });
 		}
