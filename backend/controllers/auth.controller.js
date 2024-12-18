@@ -10,6 +10,7 @@ import {
 } from "../mailtrap/emails.js";
 import { User } from "../models/user.model.js";
 
+// Sign up user controller function 
 export const signup = async (req, res) => {
 	const { email, password, name } = req.body;
 
