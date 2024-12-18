@@ -54,6 +54,7 @@ export const signup = async (req, res) => {
 		// jwt token generation and cookie setting
 		generateTokenAndSetCookie(res, user._id);
 
+		// send verification email to user email
 		await sendVerificationEmail(user.email, verificationToken);
 
 		res.status(201).json({
