@@ -74,7 +74,10 @@ export const signup = async (req, res) => {
 
 // Verify email controller function
 export const verifyEmail = async (req, res) => {
+	// get code from req.body
 	const { code } = req.body;
+
+	// try catch error handling for invalid or expired verification code
 	try {
 		const user = await User.findOne({
 			verificationToken: code,
