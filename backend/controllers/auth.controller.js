@@ -197,6 +197,7 @@ export const forgotPassword = async (req, res) => {
 		const resetToken = crypto.randomBytes(20).toString("hex");
 		const resetTokenExpiresAt = Date.now() + 1 * 60 * 60 * 1000; // 1 hour
 
+		// update resetPasswordToken and resetPasswordExpiresAt
 		user.resetPasswordToken = resetToken;
 		user.resetPasswordExpiresAt = resetTokenExpiresAt;
 
