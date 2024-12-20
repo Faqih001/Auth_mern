@@ -121,6 +121,7 @@ export const verifyEmail = async (req, res) => {
 	}
 };
 
+// Login user controller function 
 export const login = async (req, res) => {
 	const { email, password } = req.body;
 	try {
