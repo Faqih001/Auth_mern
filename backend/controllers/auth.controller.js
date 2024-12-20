@@ -184,6 +184,8 @@ export const forgotPassword = async (req, res) => {
 
 	// try catch error handling for invalid email
 	try {
+
+		// find user with email
 		const user = await User.findOne({ email });
 
 		if (!user) {
