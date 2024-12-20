@@ -140,6 +140,8 @@ export const login = async (req, res) => {
 
 		// check if password is valid 
 		const isPasswordValid = await bcryptjs.compare(password, user.password);
+
+		// if password is not valid, return error message
 		if (!isPasswordValid) {
 			return res.status(400).json({ success: false, message: "Invalid credentials" });
 		}
