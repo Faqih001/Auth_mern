@@ -129,7 +129,11 @@ export const login = async (req, res) => {
 
 	// try catch error handling for invalid credentials
 	try {
+
+		// find user with email and password 
 		const user = await User.findOne({ email });
+
+		//
 		if (!user) {
 			return res.status(400).json({ success: false, message: "Invalid credentials" });
 		}
