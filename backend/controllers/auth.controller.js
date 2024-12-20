@@ -133,7 +133,7 @@ export const login = async (req, res) => {
 		// find user with email and password 
 		const user = await User.findOne({ email });
 
-		//
+		// if user not found, return error message
 		if (!user) {
 			return res.status(400).json({ success: false, message: "Invalid credentials" });
 		}
