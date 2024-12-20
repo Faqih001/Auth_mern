@@ -176,6 +176,7 @@ export const logout = async (req, res) => {
 	res.status(200).json({ success: true, message: "Logged out successfully" });
 };
 
+// Forgot password controller function
 export const forgotPassword = async (req, res) => {
 	const { email } = req.body;
 	try {
