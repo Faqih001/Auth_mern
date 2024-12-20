@@ -201,6 +201,7 @@ export const forgotPassword = async (req, res) => {
 		user.resetPasswordToken = resetToken;
 		user.resetPasswordExpiresAt = resetTokenExpiresAt;
 
+		// save user to database
 		await user.save();
 
 		// send email
