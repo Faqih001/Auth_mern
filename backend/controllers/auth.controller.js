@@ -178,6 +178,8 @@ export const logout = async (req, res) => {
 
 // Forgot password controller function
 export const forgotPassword = async (req, res) => {
+
+	// get email from req.body
 	const { email } = req.body;
 	try {
 		const user = await User.findOne({ email });
