@@ -149,6 +149,7 @@ export const login = async (req, res) => {
 		// jwt token generation and cookie setting
 		generateTokenAndSetCookie(res, user._id);
 
+		// update lastLogin field of user
 		user.lastLogin = new Date();
 		await user.save();
 
