@@ -193,7 +193,7 @@ export const forgotPassword = async (req, res) => {
 			return res.status(400).json({ success: false, message: "User not found" });
 		}
 
-		// Generate reset token
+		// Generate reset token and reset token expires at 
 		const resetToken = crypto.randomBytes(20).toString("hex");
 		const resetTokenExpiresAt = Date.now() + 1 * 60 * 60 * 1000; // 1 hour
 
