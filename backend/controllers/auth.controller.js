@@ -123,6 +123,8 @@ export const verifyEmail = async (req, res) => {
 
 // Login user controller function 
 export const login = async (req, res) => {
+
+	// get email and password from req.body
 	const { email, password } = req.body;
 	try {
 		const user = await User.findOne({ email });
