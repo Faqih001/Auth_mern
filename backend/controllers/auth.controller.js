@@ -153,6 +153,7 @@ export const login = async (req, res) => {
 		user.lastLogin = new Date();
 		await user.save();
 
+		// return success message and user data
 		res.status(200).json({
 			success: true,
 			message: "Logged in successfully",
