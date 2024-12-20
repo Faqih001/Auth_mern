@@ -126,6 +126,8 @@ export const login = async (req, res) => {
 
 	// get email and password from req.body
 	const { email, password } = req.body;
+
+	// try catch error handling for invalid credentials
 	try {
 		const user = await User.findOne({ email });
 		if (!user) {
