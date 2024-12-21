@@ -263,7 +263,7 @@ export const checkAuth = async (req, res) => {
 		// find user by id and exclude password field
 		const user = await User.findById(req.userId).select("-password");
 
-		//
+		// if user not found, return error message
 		if (!user) {
 			return res.status(400).json({ success: false, message: "User not found" });
 		}
