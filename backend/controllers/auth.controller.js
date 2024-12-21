@@ -217,6 +217,8 @@ export const forgotPassword = async (req, res) => {
 
 // Reset password controller function 
 export const resetPassword = async (req, res) => {
+
+	// try catch error handling for invalid or expired reset token
 	try {
 		const { token } = req.params;
 		const { password } = req.body;
