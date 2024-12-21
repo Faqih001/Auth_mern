@@ -230,6 +230,7 @@ export const resetPassword = async (req, res) => {
 			resetPasswordExpiresAt: { $gt: Date.now() },
 		});
 
+		// if user not found, return error message
 		if (!user) {
 			return res.status(400).json({ success: false, message: "Invalid or expired reset token" });
 		}
