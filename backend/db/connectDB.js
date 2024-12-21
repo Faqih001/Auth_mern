@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 
+// Connect to MongoDB database function using mongoose
 export const connectDB = async () => {
 	try {
 		console.log("mongo_uri: ", process.env.MONGO_URI);
