@@ -36,6 +36,7 @@ export const sendWelcomeEmail = async (email, name) => {
 	// recipient email address array with email address as object
 	const recipient = [{ email }];
 
+	// try catch block for error handling
 	try {
 		const response = await mailtrapClient.send({
 			from: sender,
