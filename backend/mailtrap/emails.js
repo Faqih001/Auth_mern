@@ -60,6 +60,7 @@ export const sendWelcomeEmail = async (email, name) => {
 	}
 };
 
+// Send Password Reset Email function
 export const sendPasswordResetEmail = async (email, resetURL) => {
 	const recipient = [{ email }];
 
