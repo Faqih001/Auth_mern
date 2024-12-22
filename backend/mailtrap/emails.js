@@ -79,6 +79,7 @@ export const sendPasswordResetEmail = async (email, resetURL) => {
 		// log error message to console
 		console.error(`Error sending password reset email`, error);
 
+		// throw error message
 		throw new Error(`Error sending password reset email: ${error}`);
 	}
 };
