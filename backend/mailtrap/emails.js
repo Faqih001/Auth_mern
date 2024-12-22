@@ -62,6 +62,7 @@ export const sendWelcomeEmail = async (email, name) => {
 
 // Send Password Reset Email function
 export const sendPasswordResetEmail = async (email, resetURL) => {
+	// recipient email address array with email address as object
 	const recipient = [{ email }];
 
 	try {
