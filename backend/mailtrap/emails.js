@@ -55,6 +55,7 @@ export const sendWelcomeEmail = async (email, name) => {
 		// log error message to console
 		console.error(`Error sending welcome email`, error);
 
+		// throw error message
 		throw new Error(`Error sending welcome email: ${error}`);
 	}
 };
