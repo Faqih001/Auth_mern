@@ -49,6 +49,7 @@ export const sendWelcomeEmail = async (email, name) => {
 			},
 		});
 
+		// log success message to console
 		console.log("Welcome email sent successfully", response);
 	} catch (error) {
 		console.error(`Error sending welcome email`, error);
