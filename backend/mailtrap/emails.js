@@ -33,6 +33,7 @@ export const sendVerificationEmail = async (email, verificationToken) => {
 };
 // Send Welcome Email function
 export const sendWelcomeEmail = async (email, name) => {
+	// recipient email address array with email address as object
 	const recipient = [{ email }];
 
 	try {
