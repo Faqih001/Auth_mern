@@ -12,6 +12,7 @@ export const sendVerificationEmail = async (email, verificationToken) => {
 
 	// try catch block for error handling
 	try {
+		// send email using mailtrapClient send method with email details
 		const response = await mailtrapClient.send({
 			from: sender,
 			to: recipient,
