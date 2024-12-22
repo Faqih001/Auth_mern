@@ -52,6 +52,7 @@ export const sendWelcomeEmail = async (email, name) => {
 		// log success message to console
 		console.log("Welcome email sent successfully", response);
 	} catch (error) {
+		// log error message to console
 		console.error(`Error sending welcome email`, error);
 
 		throw new Error(`Error sending welcome email: ${error}`);
