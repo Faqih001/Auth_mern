@@ -106,6 +106,7 @@ export const sendResetSuccessEmail = async (email) => {
 		// log error message to console
 		console.error(`Error sending password reset success email`, error);
 
+		// throw error message
 		throw new Error(`Error sending password reset success email: ${error}`);
 	}
 };
