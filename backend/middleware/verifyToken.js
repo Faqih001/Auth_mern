@@ -1,5 +1,6 @@
 import jwt from "jsonwebtoken";
 
+// Middleware to verify token and check if user is authenticated
 export const verifyToken = (req, res, next) => {
 	const token = req.cookies.token;
 	if (!token) return res.status(401).json({ success: false, message: "Unauthorized - no token provided" });
