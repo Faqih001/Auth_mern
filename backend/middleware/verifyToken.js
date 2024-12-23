@@ -19,6 +19,8 @@ export const verifyToken = (req, res, next) => {
 
 		// Set userId in request object to decoded userId
 		req.userId = decoded.userId;
+
+		// Call next middleware
 		next();
 	} catch (error) {
 		console.log("Error in verifyToken ", error);
