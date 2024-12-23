@@ -10,6 +10,7 @@ import {
 } from "../controllers/auth.controller.js";
 import { verifyToken } from "../middleware/verifyToken.js";
 
+// Create express router instance
 const router = express.Router();
 
 router.get("/check-auth", verifyToken, checkAuth);
