@@ -16,7 +16,7 @@ const router = express.Router();
 // Define routes for auth endpoints with corresponding controller functions
 router.get("/check-auth", verifyToken, checkAuth);
 
-
+// Define routes for auth endpoints with corresponding controller functions
 router.post("/signup", signup);
 
 router.post("/login", login);
