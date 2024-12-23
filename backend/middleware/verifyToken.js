@@ -14,6 +14,7 @@ export const verifyToken = (req, res, next) => {
 		// Decode token and get userId from payload
 		const decoded = jwt.verify(token, process.env.JWT_SECRET);
 
+		// If token is invalid, return error response with message
 		if (!decoded) return res.status(401).json({ success: false, message: "Unauthorized - invalid token" });
 
 		req.userId = decoded.userId;
