@@ -23,6 +23,7 @@ export const verifyToken = (req, res, next) => {
 		// Call next middleware
 		next();
 	} catch (error) {
+		// Log error to console and return error response
 		console.log("Error in verifyToken ", error);
 		return res.status(500).json({ success: false, message: "Server error" });
 	}
