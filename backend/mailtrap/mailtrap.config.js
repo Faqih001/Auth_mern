@@ -1,6 +1,7 @@
 import { MailtrapClient } from "mailtrap";
 import dotenv from "dotenv";
 
+// load environment variables from .env file
 dotenv.config();
 
 export const mailtrapClient = new MailtrapClient({
