@@ -13,6 +13,7 @@ import { verifyToken } from "../middleware/verifyToken.js";
 // Create express router instance
 const router = express.Router();
 
+// Define routes for auth endpoints with corresponding controller functions
 router.get("/check-auth", verifyToken, checkAuth);
 
 router.post("/signup", signup);
