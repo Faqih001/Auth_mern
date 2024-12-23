@@ -7,6 +7,8 @@ export const verifyToken = (req, res, next) => {
 
 	// If no token is found, return error response
 	if (!token) return res.status(401).json({ success: false, message: "Unauthorized - no token provided" });
+
+	// Try to verify token using JWT_SECRET from environment variables
 	try {
 		const decoded = jwt.verify(token, process.env.JWT_SECRET);
 
