@@ -10,6 +10,8 @@ export const verifyToken = (req, res, next) => {
 
 	// Try to verify token using JWT_SECRET from environment variables
 	try {
+
+		// Decode token and get userId from payload
 		const decoded = jwt.verify(token, process.env.JWT_SECRET);
 
 		if (!decoded) return res.status(401).json({ success: false, message: "Unauthorized - invalid token" });
