@@ -10,6 +10,7 @@ export const mailtrapClient = new MailtrapClient({
 	token: process.env.MAILTRAP_TOKEN,
 });
 
+// sender email and name
 export const sender = {
 	email: "mailtrap@demomailtrap.com",
 	name: "Burak",
