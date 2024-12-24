@@ -13,6 +13,8 @@ dotenv.config();
 
 // create express app
 const app = express();
+
+// middleware for parsing incoming requests
 const PORT = process.env.PORT || 5000;
 const __dirname = path.resolve();
 
