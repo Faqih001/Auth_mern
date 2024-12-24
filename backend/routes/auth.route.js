@@ -27,8 +27,7 @@ router.post("/logout", logout);
 router.post("/verify-email", verifyEmail);
 // Define routes for forgot password endpoints with corresponding controller functions
 router.post("/forgot-password", forgotPassword);
-
-
+// Define routes for reset password endpoints with corresponding controller functions
 router.post("/reset-password/:token", resetPassword);
 
 export default router;
