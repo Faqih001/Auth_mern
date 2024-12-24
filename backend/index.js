@@ -32,6 +32,7 @@ if (process.env.NODE_ENV === "production") {
 	// set static folder for frontend
 	app.use(express.static(path.join(__dirname, "/frontend/dist")));
 
+	// serve index.html file for all routes
 	app.get("*", (req, res) => {
 		res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
 	});
