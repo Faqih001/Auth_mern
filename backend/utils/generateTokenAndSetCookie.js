@@ -7,6 +7,7 @@ export const generateTokenAndSetCookie = (res, userId) => {
 		expiresIn: "7d",
 	});
 
+	// Set cookie with token in response
 	res.cookie("token", token, {
 		httpOnly: true,
 		secure: process.env.NODE_ENV === "production",
