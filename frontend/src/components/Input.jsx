@@ -1,3 +1,4 @@
+// Desc: Input component for forms with icons
 const Input = ({ icon: Icon, ...props }) => {
 	return (
 		<div className='relative mb-6'>
