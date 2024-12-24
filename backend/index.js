@@ -8,6 +8,7 @@ import { connectDB } from "./db/connectDB.js";
 
 import authRoutes from "./routes/auth.route.js";
 
+// load environment variables from .env file
 dotenv.config();
 
 const app = express();
