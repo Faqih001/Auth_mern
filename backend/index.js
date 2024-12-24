@@ -38,6 +38,7 @@ if (process.env.NODE_ENV === "production") {
 	});
 }
 
+// listen for incoming requests
 app.listen(PORT, () => {
 	connectDB();
 	console.log("Server is running on port: ", PORT);
