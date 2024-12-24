@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 
+// FloatingShape component to create floating shapes
 const FloatingShape = ({ color, size, top, left, delay }) => {
 	return (
 		<motion.div
