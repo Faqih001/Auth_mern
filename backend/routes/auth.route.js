@@ -20,7 +20,7 @@ router.get("/check-auth", verifyToken, checkAuth);
 router.post("/signup", signup);
 // Define routes for login endpoints with corresponding controller functions
 router.post("/login", login);
-
+// Define routes for logout endpoints with corresponding controller functions
 router.post("/logout", logout);
 
 
