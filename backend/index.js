@@ -29,6 +29,7 @@ app.use("/api/auth", authRoutes);
 
 // serve frontend static files in production
 if (process.env.NODE_ENV === "production") {
+	// set static folder for frontend
 	app.use(express.static(path.join(__dirname, "/frontend/dist")));
 
 	app.get("*", (req, res) => {
