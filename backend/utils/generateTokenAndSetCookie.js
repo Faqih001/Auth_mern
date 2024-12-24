@@ -2,6 +2,7 @@ import jwt from "jsonwebtoken";
 
 // Generate JWT token and set cookie with token in response
 export const generateTokenAndSetCookie = (res, userId) => {
+	// Generate JWT token with user ID and secret
 	const token = jwt.sign({ userId }, process.env.JWT_SECRET, {
 		expiresIn: "7d",
 	});
