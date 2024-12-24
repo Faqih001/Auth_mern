@@ -25,7 +25,7 @@ router.post("/logout", logout);
 
 // Define routes for verify email endpoints with corresponding controller functions
 router.post("/verify-email", verifyEmail);
-
+// Define routes for forgot password endpoints with corresponding controller functions
 router.post("/forgot-password", forgotPassword);
 
 
