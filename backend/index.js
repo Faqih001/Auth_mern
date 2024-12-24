@@ -27,6 +27,7 @@ app.use(cookieParser()); // allows us to parse incoming cookies
 // define routes for auth endpoints
 app.use("/api/auth", authRoutes);
 
+// serve frontend static files in production
 if (process.env.NODE_ENV === "production") {
 	app.use(express.static(path.join(__dirname, "/frontend/dist")));
 
