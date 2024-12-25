@@ -52,6 +52,7 @@ const PasswordStrengthMeter = ({ password }) => {
 		return "bg-green-500";
 	};
 
+	// Get password strength text 
 	const getStrengthText = (strength) => {
 		if (strength === 0) return "Very Weak";
 		if (strength === 1) return "Weak";
