@@ -11,6 +11,7 @@ const PasswordCriteria = ({ password }) => {
 		{ label: "Contains special character", met: /[^A-Za-z0-9]/.test(password) },
 	];
 
+	// return password criteria
 	return (
 		<div className='mt-2 space-y-1'>
 			{criteria.map((item) => (
