@@ -7,6 +7,7 @@ const DashboardPage = () => {
 	// get user from auth store
 	const { user, logout } = useAuthStore();
 
+	// handle logout 
 	const handleLogout = () => {
 		logout();
 	};
