@@ -11,6 +11,8 @@ const DashboardPage = () => {
 	const handleLogout = () => {
 		logout();
 	};
+
+	// Return dashboard page
 	return (
 		<motion.div
 			initial={{ opacity: 0, scale: 0.9 }}
