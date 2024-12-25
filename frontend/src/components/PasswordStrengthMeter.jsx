@@ -43,6 +43,7 @@ const PasswordStrengthMeter = ({ password }) => {
 	// Get password strength 
 	const strength = getStrength(password);
 
+	// Get password strength color 
 	const getColor = (strength) => {
 		if (strength === 0) return "bg-red-500";
 		if (strength === 1) return "bg-red-400";
