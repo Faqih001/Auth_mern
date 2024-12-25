@@ -4,6 +4,7 @@ import { formatDate } from "../utils/date";
 
 // Dashboard page component 
 const DashboardPage = () => {
+	// get user from auth store
 	const { user, logout } = useAuthStore();
 
 	const handleLogout = () => {
