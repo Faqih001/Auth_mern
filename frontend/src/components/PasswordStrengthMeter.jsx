@@ -38,7 +38,9 @@ const PasswordStrengthMeter = ({ password }) => {
 		if (pass.match(/\d/)) strength++;
 		if (pass.match(/[^a-zA-Z\d]/)) strength++;
 		return strength;
-	};
+	}; 
+
+	// Get password strength 
 	const strength = getStrength(password);
 
 	const getColor = (strength) => {
