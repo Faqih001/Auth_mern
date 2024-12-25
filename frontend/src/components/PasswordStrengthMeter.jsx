@@ -61,6 +61,7 @@ const PasswordStrengthMeter = ({ password }) => {
 		return "Strong";
 	};
 
+	// Return password strength meter
 	return (
 		<div className='mt-2'>
 			<div className='flex justify-between items-center mb-1'>
