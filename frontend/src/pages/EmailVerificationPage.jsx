@@ -68,6 +68,8 @@ const EmailVerificationPage = () => {
 	const handleSubmit = async (e) => {
 		// Prevent default form submission behavior 
 		e.preventDefault();
+
+		// Join the code array into a string
 		const verificationCode = code.join("");
 		try {
 			await verifyEmail(verificationCode);
