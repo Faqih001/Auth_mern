@@ -20,6 +20,7 @@ const EmailVerificationPage = () => {
 
 	// Function to handle input changes 
 	const handleChange = (index, value) => {
+		// Update the code state
 		const newCode = [...code];
 
 		// Handle pasted content
