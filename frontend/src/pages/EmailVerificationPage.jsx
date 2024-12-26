@@ -66,6 +66,7 @@ const EmailVerificationPage = () => {
 
 	// Function to handle form submission 
 	const handleSubmit = async (e) => {
+		// Prevent default form submission behavior 
 		e.preventDefault();
 		const verificationCode = code.join("");
 		try {
