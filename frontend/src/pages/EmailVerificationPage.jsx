@@ -38,6 +38,8 @@ const EmailVerificationPage = () => {
 
 			// Focus on the last non-empty input or the first empty one
 			const lastFilledIndex = newCode.findLastIndex((digit) => digit !== "");
+
+			// Move focus to the next input field if value is entered
 			const focusIndex = lastFilledIndex < 5 ? lastFilledIndex + 1 : 5;
 			inputRefs.current[focusIndex].focus();
 		} else {
