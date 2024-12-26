@@ -6,6 +6,7 @@ import toast from "react-hot-toast";
 
 // Email verification page function 
 const EmailVerificationPage = () => {
+	// State to store the verification code 
 	const [code, setCode] = useState(["", "", "", "", "", ""]);
 	const inputRefs = useRef([]);
 	const navigate = useNavigate();
