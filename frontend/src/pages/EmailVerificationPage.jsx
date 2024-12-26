@@ -25,6 +25,7 @@ const EmailVerificationPage = () => {
 
 		// Handle pasted content
 		if (value.length > 1) {
+			// Split the pasted content into individual digits
 			const pastedCode = value.slice(0, 6).split("");
 			for (let i = 0; i < 6; i++) {
 				newCode[i] = pastedCode[i] || "";
