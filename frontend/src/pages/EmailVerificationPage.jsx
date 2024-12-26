@@ -41,6 +41,8 @@ const EmailVerificationPage = () => {
 
 			// Move focus to the next input field if value is entered
 			const focusIndex = lastFilledIndex < 5 ? lastFilledIndex + 1 : 5;
+
+			// Focus on the input field
 			inputRefs.current[focusIndex].focus();
 		} else {
 			newCode[index] = value;
