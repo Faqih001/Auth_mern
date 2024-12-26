@@ -45,6 +45,7 @@ const EmailVerificationPage = () => {
 			// Focus on the input field
 			inputRefs.current[focusIndex].focus();
 		} else {
+			// Update the code state with the new value
 			newCode[index] = value;
 			setCode(newCode);
 
