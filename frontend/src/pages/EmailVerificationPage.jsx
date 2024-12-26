@@ -15,6 +15,7 @@ const EmailVerificationPage = () => {
 	// Navigation hook 
 	const navigate = useNavigate();
 
+	// Auth store hook 
 	const { error, isLoading, verifyEmail } = useAuthStore();
 
 	const handleChange = (index, value) => {
