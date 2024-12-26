@@ -18,6 +18,7 @@ const EmailVerificationPage = () => {
 	// Auth store hook 
 	const { error, isLoading, verifyEmail } = useAuthStore();
 
+	// Function to handle input changes 
 	const handleChange = (index, value) => {
 		const newCode = [...code];
 
