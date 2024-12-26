@@ -71,6 +71,8 @@ const EmailVerificationPage = () => {
 
 		// Join the code array into a string
 		const verificationCode = code.join("");
+
+		// Verify the email 
 		try {
 			await verifyEmail(verificationCode);
 			navigate("/");
