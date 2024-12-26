@@ -32,6 +32,8 @@ const EmailVerificationPage = () => {
 			for (let i = 0; i < 6; i++) {
 				newCode[i] = pastedCode[i] || "";
 			}
+
+			// Update the code state
 			setCode(newCode);
 
 			// Focus on the last non-empty input or the first empty one
