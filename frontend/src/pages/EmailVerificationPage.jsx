@@ -58,6 +58,7 @@ const EmailVerificationPage = () => {
 
 	// Function to handle keydown events for backspace 
 	const handleKeyDown = (index, e) => {
+		// Move focus to the previous input field if backspace is pressed 
 		if (e.key === "Backspace" && !code[index] && index > 0) {
 			inputRefs.current[index - 1].focus();
 		}
