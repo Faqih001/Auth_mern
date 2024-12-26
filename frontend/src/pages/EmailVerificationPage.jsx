@@ -11,6 +11,8 @@ const EmailVerificationPage = () => {
 
 	// Ref to access the input fields 
 	const inputRefs = useRef([]);
+
+	// Navigation hook 
 	const navigate = useNavigate();
 
 	const { error, isLoading, verifyEmail } = useAuthStore();
