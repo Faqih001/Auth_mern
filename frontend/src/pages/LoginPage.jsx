@@ -13,6 +13,7 @@ const LoginPage = () => {
 	// State for password 
 	const [password, setPassword] = useState("");
 
+	// Destructuring functions from authStore 
 	const { login, isLoading, error } = useAuthStore();
 
 	const handleLogin = async (e) => {
