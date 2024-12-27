@@ -22,6 +22,7 @@ const LoginPage = () => {
 		await login(email, password);
 	};
 
+	// JSX for login page 
 	return (
 		<motion.div
 			initial={{ opacity: 0, y: 20 }}
