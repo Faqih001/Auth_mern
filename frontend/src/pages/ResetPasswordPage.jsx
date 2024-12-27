@@ -10,6 +10,8 @@ import toast from "react-hot-toast";
 const ResetPasswordPage = () => {
 	// State for password 
 	const [password, setPassword] = useState("");
+
+	// State for confirm password
 	const [confirmPassword, setConfirmPassword] = useState("");
 	const { resetPassword, error, isLoading, message } = useAuthStore();
 
