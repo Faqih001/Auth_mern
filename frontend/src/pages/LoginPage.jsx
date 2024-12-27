@@ -7,6 +7,7 @@ import { useAuthStore } from "../store/authStore";
 
 // Login page function for login in user 
 const LoginPage = () => {
+	// State for email and password 
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
 
