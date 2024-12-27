@@ -8,6 +8,7 @@ import toast from "react-hot-toast";
 
 // ResetPasswordPage function for reset password 
 const ResetPasswordPage = () => {
+	// State for password 
 	const [password, setPassword] = useState("");
 	const [confirmPassword, setConfirmPassword] = useState("");
 	const { resetPassword, error, isLoading, message } = useAuthStore();
