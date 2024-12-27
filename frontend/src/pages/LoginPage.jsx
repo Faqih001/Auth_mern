@@ -9,6 +9,8 @@ import { useAuthStore } from "../store/authStore";
 const LoginPage = () => {
 	// State for email and password 
 	const [email, setEmail] = useState("");
+
+	// State for password 
 	const [password, setPassword] = useState("");
 
 	const { login, isLoading, error } = useAuthStore();
