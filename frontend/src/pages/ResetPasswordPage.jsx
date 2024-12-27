@@ -13,6 +13,8 @@ const ResetPasswordPage = () => {
 
 	// State for confirm password
 	const [confirmPassword, setConfirmPassword] = useState("");
+
+	// Destructuring functions from authStore
 	const { resetPassword, error, isLoading, message } = useAuthStore();
 
 	const { token } = useParams();
