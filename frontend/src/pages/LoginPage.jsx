@@ -16,6 +16,7 @@ const LoginPage = () => {
 	// Destructuring functions from authStore 
 	const { login, isLoading, error } = useAuthStore();
 
+	// Function to handle login  
 	const handleLogin = async (e) => {
 		e.preventDefault();
 		await login(email, password);
