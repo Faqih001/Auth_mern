@@ -17,6 +17,7 @@ const ResetPasswordPage = () => {
 	// Destructuring functions from authStore
 	const { resetPassword, error, isLoading, message } = useAuthStore();
 
+	// Destructuring token from useParams
 	const { token } = useParams();
 	const navigate = useNavigate();
 
