@@ -6,6 +6,7 @@ import Input from "../components/Input";
 import { Lock } from "lucide-react";
 import toast from "react-hot-toast";
 
+// ResetPasswordPage function for reset password 
 const ResetPasswordPage = () => {
 	const [password, setPassword] = useState("");
 	const [confirmPassword, setConfirmPassword] = useState("");
