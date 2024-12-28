@@ -16,6 +16,7 @@ export const useAuthStore = create((set) => ({
 	isCheckingAuth: true,
 	message: null,
 
+	// Signup function to create a new user account with email, password and name
 	signup: async (email, password, name) => {
 		set({ isLoading: true, error: null });
 		try {
