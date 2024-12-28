@@ -7,6 +7,7 @@ const API_URL = import.meta.env.MODE === "development" ? "http://localhost:5000/
 // Set axios to send cookies with requests to the backend
 axios.defaults.withCredentials = true;
 
+// Create a store to manage authentication state and actions (login, signup, logout, etc.)
 export const useAuthStore = create((set) => ({
 	user: null,
 	isAuthenticated: false,
