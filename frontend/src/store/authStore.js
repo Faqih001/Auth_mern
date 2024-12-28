@@ -27,6 +27,8 @@ export const useAuthStore = create((set) => ({
 			throw error;
 		}
 	},
+
+	// Login function to authenticate a user with email and password and get a JWT token
 	login: async (email, password) => {
 		set({ isLoading: true, error: null });
 		try {
