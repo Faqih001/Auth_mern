@@ -56,6 +56,8 @@ export const useAuthStore = create((set) => ({
 			throw error;
 		}
 	},
+
+	// Verify email function to confirm a user's email address with a verification code sent to their email
 	verifyEmail: async (code) => {
 		set({ isLoading: true, error: null });
 		try {
@@ -67,6 +69,8 @@ export const useAuthStore = create((set) => ({
 			throw error;
 		}
 	},
+	
+	
 	checkAuth: async () => {
 		set({ isCheckingAuth: true, error: null });
 		try {
