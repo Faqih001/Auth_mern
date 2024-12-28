@@ -33,7 +33,9 @@ const ResetPasswordPage = () => {
 			return;
 		}
 		
+		// Try to reset password 
 		try {
+			// Call resetPassword function from authStore
 			await resetPassword(token, password);
 
 			toast.success("Password reset successfully, redirecting to login page...");
