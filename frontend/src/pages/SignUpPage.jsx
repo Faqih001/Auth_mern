@@ -8,6 +8,8 @@ import { useAuthStore } from "../store/authStore";
 
 // SignUpPage function for sign up
 const SignUpPage = () => {
+
+	// State for name email and password
 	const [name, setName] = useState("");
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
