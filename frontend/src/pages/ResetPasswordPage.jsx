@@ -19,6 +19,8 @@ const ResetPasswordPage = () => {
 
 	// Destructuring token from useParams
 	const { token } = useParams();
+
+	// Destructuring navigate from useNavigate
 	const navigate = useNavigate();
 
 	const handleSubmit = async (e) => {
