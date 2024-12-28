@@ -17,6 +17,7 @@ const SignUpPage = () => {
 	// Destructuring navigate from useNavigate
 	const navigate = useNavigate();
 
+	// Destructuring signup, error and isLoading from authStore
 	const { signup, error, isLoading } = useAuthStore();
 
 	const handleSignUp = async (e) => {
