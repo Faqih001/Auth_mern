@@ -70,7 +70,7 @@ export const useAuthStore = create((set) => ({
 		}
 	},
 	
-	
+	// check auth function to verify if a user is authenticated and get their user data from the backend
 	checkAuth: async () => {
 		set({ isCheckingAuth: true, error: null });
 		try {
