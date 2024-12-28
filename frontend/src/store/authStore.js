@@ -1,6 +1,7 @@
 import { create } from "zustand";
 import axios from "axios";
 
+// API URL based on environment (development or production) to make requests to the backend
 const API_URL = import.meta.env.MODE === "development" ? "http://localhost:5000/api/auth" : "/api/auth";
 
 axios.defaults.withCredentials = true;
