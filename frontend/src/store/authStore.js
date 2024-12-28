@@ -80,6 +80,8 @@ export const useAuthStore = create((set) => ({
 			set({ error: null, isCheckingAuth: false, isAuthenticated: false });
 		}
 	},
+
+	// Forgot password function to send a password reset link to a user's email address if they forgot their password
 	forgotPassword: async (email) => {
 		set({ isLoading: true, error: null });
 		try {
