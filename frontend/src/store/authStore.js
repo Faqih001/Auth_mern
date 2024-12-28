@@ -45,6 +45,7 @@ export const useAuthStore = create((set) => ({
 		}
 	},
 
+	// Logout function to remove the JWT token from the user's browser and log them out of the app
 	logout: async () => {
 		set({ isLoading: true, error: null });
 		try {
