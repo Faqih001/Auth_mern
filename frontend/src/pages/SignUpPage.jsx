@@ -20,6 +20,7 @@ const SignUpPage = () => {
 	// Destructuring signup, error and isLoading from authStore
 	const { signup, error, isLoading } = useAuthStore();
 
+	// Function to handle sign up
 	const handleSignUp = async (e) => {
 		e.preventDefault();
 
