@@ -23,6 +23,7 @@ const ResetPasswordPage = () => {
 	// Destructuring navigate from useNavigate
 	const navigate = useNavigate();
 
+	// Function to handle form submission 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 
