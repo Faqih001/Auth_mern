@@ -4,6 +4,7 @@ import axios from "axios";
 // API URL based on environment (development or production) to make requests to the backend
 const API_URL = import.meta.env.MODE === "development" ? "http://localhost:5000/api/auth" : "/api/auth";
 
+// Set axios to send cookies with requests to the backend
 axios.defaults.withCredentials = true;
 
 export const useAuthStore = create((set) => ({
