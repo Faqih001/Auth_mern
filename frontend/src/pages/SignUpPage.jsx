@@ -24,6 +24,7 @@ const SignUpPage = () => {
 	const handleSignUp = async (e) => {
 		e.preventDefault();
 
+		// Try to sign up user with email, password and name
 		try {
 			await signup(email, password, name);
 			navigate("/verify-email");
