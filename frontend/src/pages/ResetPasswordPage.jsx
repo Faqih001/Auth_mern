@@ -27,10 +27,12 @@ const ResetPasswordPage = () => {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 
+		// Check if password and confirm password are same
 		if (password !== confirmPassword) {
 			alert("Passwords do not match");
 			return;
 		}
+		
 		try {
 			await resetPassword(token, password);
 
