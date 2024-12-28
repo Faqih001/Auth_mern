@@ -95,6 +95,8 @@ export const useAuthStore = create((set) => ({
 			throw error;
 		}
 	},
+
+	// Reset password function to change a user's password with a token sent to their email address and a new password
 	resetPassword: async (token, password) => {
 		set({ isLoading: true, error: null });
 		try {
