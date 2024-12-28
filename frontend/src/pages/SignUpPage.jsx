@@ -6,6 +6,7 @@ import { Link, useNavigate } from "react-router-dom";
 import PasswordStrengthMeter from "../components/PasswordStrengthMeter";
 import { useAuthStore } from "../store/authStore";
 
+// SignUpPage function for sign up
 const SignUpPage = () => {
 	const [name, setName] = useState("");
 	const [email, setEmail] = useState("");
