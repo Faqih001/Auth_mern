@@ -32,6 +32,8 @@ const SignUpPage = () => {
 			console.log(error);
 		}
 	};
+
+	// JSX for sign up page 
 	return (
 		<motion.div
 			initial={{ opacity: 0, y: 20 }}
