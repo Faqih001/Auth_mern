@@ -13,6 +13,8 @@ const SignUpPage = () => {
 	const [name, setName] = useState("");
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
+
+	// Destructuring navigate from useNavigate
 	const navigate = useNavigate();
 
 	const { signup, error, isLoading } = useAuthStore();
