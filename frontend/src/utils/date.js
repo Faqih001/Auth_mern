@@ -1,3 +1,4 @@
+// Format date function for displaying date in a readable format
 export const formatDate = (dateString) => {
 	const date = new Date(dateString);
 	if (isNaN(date.getTime())) {
