@@ -30,6 +30,7 @@ const ProtectedRoute = ({ children }) => {
 		return <Navigate to='/verify-email' replace />;
 	}
 
+	// render the children components if user is authenticated and verified
 	return children;
 };
 
