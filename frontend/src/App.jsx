@@ -20,6 +20,7 @@ const ProtectedRoute = ({ children }) => {
 	// check if user is authenticated and verified
 	const { isAuthenticated, user } = useAuthStore();
 
+	// redirect to login page if user is not authenticated
 	if (!isAuthenticated) {
 		return <Navigate to='/login' replace />;
 	}
