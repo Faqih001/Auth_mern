@@ -36,6 +36,8 @@ const ProtectedRoute = ({ children }) => {
 
 // redirect authenticated users to the home page
 const RedirectAuthenticatedUser = ({ children }) => {
+
+	// check if user is authenticated and verified
 	const { isAuthenticated, user } = useAuthStore();
 
 	if (isAuthenticated && user.isVerified) {
