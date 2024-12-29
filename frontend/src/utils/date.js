@@ -1,8 +1,10 @@
 // Format date function for displaying date in a readable format
 export const formatDate = (dateString) => {
 
-	// If the date string is invalid, return 'Invalid Date'
+	// Convert the date string to a Date object
 	const date = new Date(dateString);
+
+	// If the date string is invalid, return 'Invalid Date'
 	if (isNaN(date.getTime())) {
 		return "Invalid Date";
 	}
