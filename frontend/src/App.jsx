@@ -45,6 +45,7 @@ const RedirectAuthenticatedUser = ({ children }) => {
 		return <Navigate to='/' replace />;
 	}
 
+	// render the children components if user is not authenticated or not verified
 	return children;
 };
 
