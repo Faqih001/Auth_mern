@@ -60,6 +60,7 @@ function App() {
 		checkAuth();
 	}, [checkAuth]);
 
+	// show loading spinner while checking auth status and render the app layout
 	if (isCheckingAuth) return <LoadingSpinner />;
 
 	return (
