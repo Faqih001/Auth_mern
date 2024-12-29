@@ -49,6 +49,7 @@ const RedirectAuthenticatedUser = ({ children }) => {
 	return children;
 };
 
+// main app component to render the app layout and routes
 function App() {
 	const { isCheckingAuth, checkAuth } = useAuthStore();
 
