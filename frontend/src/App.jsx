@@ -16,6 +16,8 @@ import { useEffect } from "react";
 
 // protect routes that require authentication
 const ProtectedRoute = ({ children }) => {
+
+	// check if user is authenticated and verified
 	const { isAuthenticated, user } = useAuthStore();
 
 	if (!isAuthenticated) {
