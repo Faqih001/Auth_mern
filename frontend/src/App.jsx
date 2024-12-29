@@ -55,6 +55,7 @@ function App() {
 	// check if user is authenticated and verify their authentication status
 	const { isCheckingAuth, checkAuth } = useAuthStore();
 
+	// check auth status on component mount
 	useEffect(() => {
 		checkAuth();
 	}, [checkAuth]);
