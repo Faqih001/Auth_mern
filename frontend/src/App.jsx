@@ -63,6 +63,7 @@ function App() {
 	// show loading spinner while checking auth status and render the app layout
 	if (isCheckingAuth) return <LoadingSpinner />;
 
+	// render the app layout with routes
 	return (
 		<div
 			className='min-h-screen bg-gradient-to-br
