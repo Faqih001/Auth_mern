@@ -9,6 +9,7 @@ export const formatDate = (dateString) => {
 		return "Invalid Date";
 	}
 
+	// Return the date in the format 'Month Day, Year, HH:MM AM/PM'
 	return date.toLocaleString("en-US", {
 		year: "numeric",
 		month: "short",
