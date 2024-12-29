@@ -51,6 +51,8 @@ const RedirectAuthenticatedUser = ({ children }) => {
 
 // main app component to render the app layout and routes
 function App() {
+
+	// check if user is authenticated and verify their authentication status
 	const { isCheckingAuth, checkAuth } = useAuthStore();
 
 	useEffect(() => {
